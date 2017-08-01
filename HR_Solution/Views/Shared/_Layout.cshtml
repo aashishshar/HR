@@ -9,14 +9,15 @@
     @*@Scripts.Render("~/bundles/jquery")*@
 
 </head>
+@Html.Partial("_Header")
 <body class="homepage">
-    @Html.Partial("_Header")
-    <header id="head" class="secondary">
+    
+    @*<header id="head" class="secondary">
         <div class="container">
             <h1>@ViewBag.Title</h1>
 
         </div>
-    </header>
+    </header>*@
    
         @RenderBody()
       

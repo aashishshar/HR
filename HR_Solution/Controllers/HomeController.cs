@@ -26,5 +26,17 @@ namespace HR_Solution.Controllers
 
             return View();
         }
+        public ActionResult Services()
+        {
+            ViewBag.Message = "Your Service page.";
+
+            return View();
+        }
+        public ActionResult Blog()
+        {
+            ViewBag.Message = "Your Blog page.";
+
+            return View();
+        }
     }
 }
