@@ -1,0 +1,33 @@
+﻿<header id="header">
+    <nav class="navbar navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Home">COGENT<small style="font-size:12px;">HR Solution</small></a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="@(ViewBag.title == "Home" ? "active" : "") "><a href="/Home">Home</a></li>
+                    <li class="@(ViewBag.title == "About" ? "active" : "") "><a href="@Url.Action("About","Home")">About</a></li>
+                    <li class="@(ViewBag.title == "Courses" ? "active" : "") "><a href="@Url.Action("Courses","Home")">Services</a></li>
+                    <li class="@(ViewBag.title == "Faculty" ? "active" : "") "><a href="@Url.Action("Faculty","Home")">Portfolio</a></li>
+                    <li class="@(ViewBag.title == "Gallery" ? "active" : "") "><a href="@Url.Action("Gallery","Home")">Blogs</a></li>
+                    <li class="@(ViewBag.title == "Contact" ? "active" : "") "><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
+                    @*<li class="active"><a href="">Home</a></li>
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>*@
+                </ul>
+            </div>
+        </div><!--/.container-->
+    </nav><!--/nav-->
+
+</header>
